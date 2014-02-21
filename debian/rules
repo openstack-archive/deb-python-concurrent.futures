@@ -17,12 +17,9 @@ override_dh_sphinxdoc:
 
 override_dh_auto_test:
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
-	set -e ; \
-	set -x ; \
-	for python in $(shell pyversions -r); do \
-		# retrive the lib path \
-		LIB=$$($$python -c "from distutils.command.build import build ; from distutils.core import Distribution ; b = build(Distribution()) ; b.finalize_options() ; print b.build_purelib") ; \
-		PYTHONPATH=$$LIB $$python ./test_futures.py ; \
+	set -e ; set -x ; \
+	for pyvers in $(PYTHONS) ; do \
+		PYTHONPATH=. python$$pyvers test_futures.py ; \
 	done
 endif
 
