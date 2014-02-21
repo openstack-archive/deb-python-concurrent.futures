@@ -5,6 +5,8 @@ python-concurrent.futures (2.1.6-3) unstable; urgency=medium
   * Added missing build-depends: python-unittest2.
   * Removes Provides: python-futures, since concurrent.futures is really the
     new API that upstream wants to advertise for.
+  * Added extend-diff-ignore = "^[^/]*[.]egg-info/" in debian/source/options,
+    and removed the rm -rf *.egg-info from debian/rules.
 
  -- Thomas Goirand <zigo@debian.org>  Fri, 21 Feb 2014 15:07:44 +0800
 

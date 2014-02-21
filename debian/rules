@@ -11,10 +11,6 @@ override_dh_install:
 			--root $(CURDIR)/debian/python-concurrent.futures; \
 	done
 
-override_dh_clean:
-	dh_clean -O--buildsystem=python_distutils
-	rm -rf *.egg-info
-
 override_dh_sphinxdoc:
 	sphinx-build -b html docs $(CURDIR)/debian/python-concurrent.futures/usr/share/doc/python-concurrent.futures/html
 	dh_sphinxdoc -O--buildsystem=python_distutils
