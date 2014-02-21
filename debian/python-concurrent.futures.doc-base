@@ -1,0 +1,10 @@
+Document: python-concurrent.futures
+Title: concurrent.futures — Asynchronous computation
+Author: Brian Quinlan
+Abstract: The concurrent.futures module provides a high-level interface for
+ asynchronously executing callables.
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-concurrent.futures/html/index.html
+Files: /usr/share/doc/python-concurrent.futures/html/*.html

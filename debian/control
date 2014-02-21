@@ -1,0 +1,27 @@
+Source: python-concurrent.futures
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Sandro Tosi <morph@debian.org>
+Build-Depends: debhelper (>= 8),
+               python-all (>= 2.6.6-3~),
+               python-setuptools,
+               python-sphinx (>= 1.0.7+dfsg)
+Standards-Version: 3.9.5
+Vcs-Svn: svn://anonscm.debian.org/python-modules/packages/python-concurrent.futures/trunk/
+Vcs-Browser: http://anonscm.debian.org/viewvc/python-modules/packages/python-concurrent.futures/trunk/
+Homepage: http://code.google.com/p/pythonfutures/
+
+Package: python-concurrent.futures
+Architecture: all
+Depends: ${misc:Depends},
+         ${python:Depends},
+         ${shlibs:Depends},
+         ${sphinxdoc:Depends}
+Provides: python-futures
+Description: backport of concurrent.futures package from Python 3.2
+ The concurrent.futures module provides a high-level interface for
+ asynchronously executing callables.
+ .
+ This is a backport for concurrent.futures as of PEP-3148 and included in
+ Python 3.2

@@ -1,0 +1,42 @@
+python-concurrent.futures (2.1.6-2) unstable; urgency=medium
+
+  * Team upload.
+  * Fixes the fact that the package isn't installed at all in /usr/lib/python,
+    which makes it completely unusable:
+    - Added missing --with python2.
+    - Added explicit --buildsystem=python_distutils.
+    - Added Provides: python-futures
+    - Added missing ${sphinxdoc:Depends}, installing correctly with sphinx-build
+  * Removed useless XS-Python-Version: >= 2.6.
+  * Removed deprecated python-support build-depends in the favor of dh_python2,
+    and therefore now build-depends on python-all version (>= 2.6.6-3~).
+  * Ran wrap-and-sort.
+  * Fixed Format field of debian/copyright.
+
+ -- Thomas Goirand <zigo@debian.org>  Sat, 25 Jan 2014 05:59:22 +0000
+
+python-concurrent.futures (2.1.6-1) unstable; urgency=low
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+  [ Sandro Tosi ]
+  * New upstream release
+  * debian/copyright
+    - extend packaging copyright years
+  * debian/control
+    - bump Standards-Version to 3.9.5 (no changes needed)
+
+ -- Sandro Tosi <morph@debian.org>  Fri, 17 Jan 2014 21:04:59 +0100
+
+python-concurrent.futures (2.1.3-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Sandro Tosi <morph@debian.org>  Wed, 29 Aug 2012 23:17:44 +0200
+
+python-concurrent.futures (2.1.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #657067)
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 08 Apr 2012 13:22:06 +0200
