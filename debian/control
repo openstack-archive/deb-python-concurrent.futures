@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 8),
                python-sphinx (>= 1.0.7+dfsg),
                python-unittest2
 Standards-Version: 3.9.5
-Vcs-Svn: git://anonscm.debian.org/openstack/python-concurrent.futures.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-concurrent.futures.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-concurrent.futures.git;a=summary
 Homepage: http://code.google.com/p/pythonfutures/
 
