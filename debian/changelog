@@ -2,6 +2,7 @@ python-concurrent.futures (2.1.6-3) unstable; urgency=medium
 
   * Adopting the package (Closes: #736714).
   * Moves the package to pkg-openstack because I want to use Git.
+  * Added missing build-depends: python-unittest2.
 
  -- Thomas Goirand <zigo@debian.org>  Fri, 21 Feb 2014 15:07:44 +0800
 
