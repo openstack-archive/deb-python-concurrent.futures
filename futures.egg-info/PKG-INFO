@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: futures
-Version: 2.1.6
+Version: 2.2.0
 Summary: Backport of the concurrent.futures package from Python 3.2
 Home-page: http://code.google.com/p/pythonfutures
 Author: Alex Gronholm
