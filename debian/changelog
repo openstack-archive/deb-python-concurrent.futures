@@ -1,3 +1,10 @@
+python-concurrent.futures (2.2.0-1) UNRELEASED; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Barry Warsaw <barry@debian.org>  Mon, 29 Sep 2014 15:44:56 -0400
+
 python-concurrent.futures (2.1.6-4) unstable; urgency=medium
 
   * Team upload.
