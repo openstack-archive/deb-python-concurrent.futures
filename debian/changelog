@@ -1,6 +1,8 @@
 python-concurrent.futures (3.0.3-1) experimental; urgency=medium
 
   * New upstream release.
+  * Fixed (build-)depends for this release: dropping version for python-all,
+    adding dh-python, etc.
 
  -- Thomas Goirand <zigo@debian.org>  Wed, 15 Jul 2015 12:41:55 +0000
 
