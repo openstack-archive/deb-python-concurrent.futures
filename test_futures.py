@@ -1,4 +1,3 @@
-from __future__ import with_statement
 import os
 import subprocess
 import sys
@@ -8,6 +7,8 @@ import contextlib
 import logging
 import re
 import time
+from StringIO import StringIO
+from test import test_support
 
 from concurrent import futures
 from concurrent.futures._base import (
@@ -17,21 +18,6 @@ try:
     import unittest2 as unittest
 except ImportError:
     import unittest
-
-try:
-    from StringIO import StringIO
-except ImportError:
-    from io import StringIO
-
-try:
-    from test import test_support
-except ImportError:
-    from test import support as test_support
-
-try:
-    next
-except NameError:
-    next = lambda x: x.next()
 
 
 def reap_threads(func):
@@ -437,6 +423,13 @@ class AsCompletedTests(unittest.TestCase):
                               SUCCESSFUL_FUTURE]),
                          completed_futures)
 
+    def test_duplicate_futures(self):
+        # Issue 20367. Duplicate futures should not raise exceptions or give
+        # duplicate responses.
+        future1 = self.executor.submit(time.sleep, 2)
+        completed = [f for f in futures.as_completed([future1,future1])]
+        self.assertEqual(len(completed), 1)
+
 
 class ThreadPoolAsCompletedTests(ThreadPoolMixin, AsCompletedTests):
     pass
@@ -484,7 +477,15 @@ class ExecutorTest(unittest.TestCase):
 
 
 class ThreadPoolExecutorTest(ThreadPoolMixin, ExecutorTest):
-    pass
+    def test_map_submits_without_iteration(self):
+        """Tests verifying issue 11777."""
+        finished = []
+        def record_finished(n):
+            finished.append(n)
+
+        self.executor.map(record_finished, range(10))
+        self.executor.shutdown(wait=True)
+        self.assertEqual(len(finished), 10)
 
 
 class ProcessPoolExecutorTest(ProcessPoolMixin, ExecutorTest):
