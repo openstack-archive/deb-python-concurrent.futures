@@ -2,11 +2,15 @@
 
 PYTHONS:=$(shell pyversions -vr)
 
+UPSTREAM_GIT = git://github.com/agronholm/pythonfutures.git
+include /usr/share/openstack-pkg-tools/pkgos.make
+
+
 %:
 	dh $@ --buildsystem=python_distutils --with python2,sphinxdoc
 
 override_dh_install:
-	set -e && for pyvers in $(PYTHONS); do \
+	set -e ; for pyvers in $(PYTHONS); do \
 		python$$pyvers setup.py install --install-layout=deb \
 			--root $(CURDIR)/debian/python-concurrent.futures; \
 	done
