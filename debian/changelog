@@ -1,3 +1,9 @@
+python-concurrent.futures (3.0.3-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 16 Oct 2015 07:49:51 +0000
+
 python-concurrent.futures (3.0.3-1) experimental; urgency=medium
 
   * New upstream release.
