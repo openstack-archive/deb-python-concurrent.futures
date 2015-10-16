@@ -1,6 +1,7 @@
 python-concurrent.futures (3.0.3-2) unstable; urgency=medium
 
   * Uploading to unstable.
+  * Fixed watch file to use github tags instead of broken PyPi.
 
  -- Thomas Goirand <zigo@debian.org>  Fri, 16 Oct 2015 07:49:51 +0000
 
