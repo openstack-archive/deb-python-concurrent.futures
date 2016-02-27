@@ -1,0 +1,1 @@
+Test-Command: python -c "from concurrent import futures; print futures.__author__"

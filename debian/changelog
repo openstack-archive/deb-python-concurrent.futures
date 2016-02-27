@@ -1,3 +1,17 @@
+python-concurrent.futures (3.0.5-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+  * Standards-Version is 3.9.7 now (no change).
+  * Fixed Homepage.
+  * Fixed Vcs-Url (https).
+  * Added Debian tests.
+  * Removed patch 0001-Fix-i386-test-failure.patch (Applied upstream).
+  * d/compat bumped to 9 (no change).
+  * Fixed d/copyright order.
+  * Added myself to d/copyright.
+
+ -- Ondřej Nový <novy@ondrej.org>  Sat, 27 Feb 2016 18:08:42 +0100
+
 python-concurrent.futures (3.0.3-2) unstable; urgency=medium
 
   * Uploading to unstable.

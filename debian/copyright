@@ -1,14 +1,15 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: python-concurrent.futures
-Source: http://pypi.python.org/pypi/futures
+Source: https://github.com/agronholm/pythonfutures
+
+Files: *
+Copyright: 2009-2011, Brian Quinlan <brian@sweetapp.com>
+License: BSD-2-clause
 
 Files: debian/*
 Copyright: 2012-2014, Sandro Tosi <morph@debian.org>
            2014, Thomas Goirand <zigo@debian.org>
-License: BSD-2-clause
-
-Files: *
-Copyright: 2009-2011, Brian Quinlan <brian@sweetapp.com>
+           2016, Ondřej Nový <novy@ondrej.org>
 License: BSD-2-clause
 
 License: BSD-2-clause
