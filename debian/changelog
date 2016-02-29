@@ -9,6 +9,7 @@ python-concurrent.futures (3.0.5-1) unstable; urgency=medium
   * d/compat bumped to 9 (no change).
   * Fixed d/copyright order.
   * Added myself to d/copyright.
+  * Added myself as uploader.
 
  -- Ondřej Nový <novy@ondrej.org>  Mon, 29 Feb 2016 15:56:06 +0100
 
