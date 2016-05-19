@@ -2,7 +2,7 @@
 
 PYTHONS:=$(shell pyversions -vr)
 
-UPSTREAM_GIT = git://github.com/agronholm/pythonfutures.git
+UPSTREAM_GIT := https://github.com/agronholm/pythonfutures.git
 include /usr/share/openstack-pkg-tools/pkgos.make
 
 
