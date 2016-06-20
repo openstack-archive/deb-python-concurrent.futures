@@ -1,11 +1,11 @@
-python-concurrent.futures (3.0.5-2) UNRELEASED; urgency=medium
+python-concurrent.futures (3.0.5-2) unstable; urgency=medium
 
   * Standards-Version is 3.9.8 now (no change)
   * Change directory to $ADTTMP before running Debian tests
   * d/rules: Changed UPSTREAM_GIT protocol to https
   * d/{control,copyright}: Use my @debian.org email address
 
- -- Ondřej Nový <novy@ondrej.org>  Sat, 09 Apr 2016 19:26:15 +0200
+ -- Ondřej Nový <onovy@debian.org>  Mon, 20 Jun 2016 23:30:33 +0200
 
 python-concurrent.futures (3.0.5-1) unstable; urgency=medium
 
