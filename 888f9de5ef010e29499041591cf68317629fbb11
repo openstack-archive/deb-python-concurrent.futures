@@ -1,0 +1,8 @@
+Code-Review+2: Thomas Goirand <thomas@goirand.fr>
+Workflow+1: Thomas Goirand <thomas@goirand.fr>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 19 Aug 2016 14:31:42 +0000
+Reviewed-on: https://review.openstack.org/357817
+Project: openstack/deb-python-concurrent.futures
+Branch: refs/heads/debian/newton
