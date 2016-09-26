@@ -1,3 +1,10 @@
+python-concurrent.futures (3.0.5-3) UNRELEASED; urgency=medium
+
+  * d/s/options: extend-diff-ignore of .gitreview
+  * d/control: Using OpenStack's Gerrit as VCS URLs.
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 26 Sep 2016 19:08:21 +0200
+
 python-concurrent.futures (3.0.5-2) unstable; urgency=medium
 
   * Standards-Version is 3.9.8 now (no change)
